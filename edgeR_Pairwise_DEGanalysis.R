@@ -23,4 +23,3 @@ y_tn = estimateTagwiseDisp(y_tn)
 #lrt = glmLRT(fit, coef = 2, contrast = c("6Mo","15Mo"))
 write.table(topTags(exactTest(y_tn, pair=c('6Month','15Month')), n = Inf),'15Mo34_vs_6Mo56.fastq.trimmed.RAT_ens98_dna_rm.STAR.ReadsPerGene.edgeR.txt', sep = '\t',
             quote = FALSE)
-topTag
